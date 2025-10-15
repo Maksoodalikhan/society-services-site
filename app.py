@@ -1,12 +1,20 @@
 import os
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "Welcome to Society Services Agency!"
+    return render_template('index.html')
+
+@app.route('/services')
+def services():
+    return render_template('services.html')
+
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
 
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port)
+     port = int(os.environ.get('PORT', 5000))
+     app.run(debug=True, host='0.0.0.0', port=port)
