@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Society Services Agency</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/services">Services</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact Us</h1>
+        <p>We’d love to hear from you! Whether you’re looking for a quote or have questions about our services, feel free to reach out.</p>
+
+        <h2>📧 Email</h2>
+        <p>support@societyservices.in</p>
+
+        <h2>📞 Phone</h2>
+        <p>+91 98765 43210</p>
+
+        <h2>📍 Office Address</h2>
+        <p>2nd Floor, GreenTech Plaza, Bannerghatta Road, Bengaluru, Karnataka</p>
+
+        <h2>📝 Inquiry Form</h2>
+        <form action="/submit-form" method="post">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" cols="40"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Send Message">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
